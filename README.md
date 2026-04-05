@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hell Roulette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hell Roulette</h1>
+        
+        <div class="balance">Баланс: <span id="balance">1000</span> монет</div>
+        
+        <div class="timer-section">
+            <h3>Время на ставки: <span id="timer">20</span> сек</h3>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <div class="roulette">
+            <div id="wheel" class="wheel"></div>
+            <button id="spin" disabled>Крутить!</button>
+        </div>
+
+        <div class="bets">
+            <h3>Ваши ставки</h3>
+            
+            <!-- Ставка на цвет -->
+            <div class="bet-option">
+                <button class="color-btn red" data-bet="red" disabled>Красное (1:1)</button>
+                <button class="color-btn black" data-bet="black" disabled>Чёрное (1:1)</button>
+            </div>
+            
+            <!-- Ставка на число -->
+            <div class="number-bets">
+                <h4>Ставка на число (35:1)</h4>
+                <div id="numbers" class="number-grid"></div>
+            </div>
+            
+            <!-- Секторы -->
+            <div class="sector-bets">
+                <h4>Секторы</h4>
+                <button data-sector="1-12" disabled>1-12 (2:1)</button>
+                <button data-sector="13-24" disabled>13-24 (2:1)</button>
+                <button data-sector="25-36" disabled>25-36 (2:1)</button>
+            </div>
+        </div>
+
+        <div class="result" id="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+.timer-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.
+
+
